@@ -183,6 +183,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.YnVzaW5lc3M6bWFpbDI0NjY4" projecturn="a.YnVzaW5lc3M6bWFpbDI0NjY4I0QyMDIwMDIyNDI2ODUxNDQzMQ" f3durn="urn:adsk.wipprod:dm.lineage:gNpopR7cSbe6tJg5jz6eig" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="55d6bc9d-feca-420f-b853-ab6b93755fc4" lastsyncedrevisionid="55d6bc9d-feca-420f-b853-ab6b93755fc4" lastboardhashguid="41ff199b-b404-8732-9c54-9f774963398e" lastpushedtime="2020-05-08T07:24:39Z" linktopcb3d="%12"/>
 <plain>
 <wire x1="80.9978" y1="0" x2="80.9978" y2="120" width="0.1524" layer="20"/>
 <wire x1="80.9978" y1="120" x2="0" y2="120" width="0.1524" layer="20"/>
@@ -5026,6 +5027,10 @@ POWER</text>
 <text x="72.3" y="59.2" size="0.6096" layer="22" rot="MR270">GND</text>
 <text x="72.3" y="56.3" size="0.6096" layer="22" rot="MR270">TX</text>
 <text x="72.3" y="53.8" size="0.6096" layer="22" rot="MR270">RX</text>
+<text x="6.3" y="48.4" size="0.8128" layer="22" rot="MR270">BT Firm</text>
+<text x="9.8" y="49.7" size="0.8128" layer="22" rot="MR180">DIO</text>
+<text x="9.8" y="47.1" size="0.8128" layer="22" rot="MR180">CLK</text>
+<text x="9.7" y="44.6" size="0.8128" layer="22" rot="MR180">RST</text>
 </plain>
 <libraries>
 <library name="TL3342F160QG">
@@ -11336,6 +11341,11 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
